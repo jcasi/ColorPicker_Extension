@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  background-color: transparent;
+  width: 350px;
+}
+
+.container :where(.picker, header, .all-colors) {
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 35px 35px;
+}
+
+.container .picker {
+  padding: 35px 0;
+  background-color: #326789;
+  justify-content: center;
+}
+
+.picker #pickerButton {
+  margin-right: 8px;
+}
+
+.picker #pickerButton,
+.picker #exportButton {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  background-color: #e65c4f;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.picker #pickerButton:hover,
+.picker #exportButton:hover {
+  background-color: #b05350;
+}
+
+.colors-list {
+  margin: 10px 15px;
+}
+
+.colors-list header {
+  justify-content: space-between;
+}
+
+header .title {
+  font-size: 1rem;
+}
+
+header #clearButton {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #e65c4f;
+}
+
+.colors-list .all-colors {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px 0 0;
+}
